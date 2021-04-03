@@ -1,0 +1,37 @@
+Dr. Memory version 2.3.0 build 1 built on Feb  6 2020 06:09:03
+Windows version: WinVer=105;Rel=2009;Build=19042;Edition=Core
+Dr. Memory results for pid 15664: "pbuffer1.exe"
+Application cmdline: "pbuffer1"
+Recorded 118 suppression(s) from default C:\Program Files (x86)\Dr. Memory\bin\suppress-default.txt
+System call information is missing for this operating system: WinVer=105;Rel=2009;Build=19042;Edition=Core.
+
+Error #1: LEAK 2 direct bytes 0x01280c98-0x01280c9a + 0 indirect bytes
+# 0 replace_malloc                                  [d:\drmemory_package\common\alloc_replace.c:2577]
+# 1 msvcrt.dll!_strdup   
+# 2 .text       
+# 3 __mingw_glob
+# 4 _setargv    
+# 5 .text       
+# 6 ntdll.dll!RtlGetAppContainerNamedObjectPath    +0x11d    (0x775e7c7e <ntdll.dll+0x67c7e>)
+# 7 ntdll.dll!RtlGetAppContainerNamedObjectPath    +0xed     (0x775e7c4e <ntdll.dll+0x67c4e>)
+
+===========================================================================
+FINAL SUMMARY:
+
+DUPLICATE ERROR COUNTS:
+
+SUPPRESSIONS USED:
+
+ERRORS FOUND:
+      0 unique,     0 total unaddressable access(es)
+      0 unique,     0 total uninitialized access(es)
+      0 unique,     0 total invalid heap argument(s)
+      0 unique,     0 total GDI usage error(s)
+      0 unique,     0 total handle leak(s)
+      0 unique,     0 total warning(s)
+      1 unique,     1 total,      2 byte(s) of leak(s)
+      0 unique,     0 total,      0 byte(s) of possible leak(s)
+ERRORS IGNORED:
+      7 unique,     7 total,   4397 byte(s) of still-reachable allocation(s)
+         (re-run with "-show_reachable" for details)
+Details: C:\Users\hyhic\AppData\Roaming\Dr. Memory\DrMemory-pbuffer1.exe.15664.000\results.txt
